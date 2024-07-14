@@ -16,7 +16,7 @@ export default () => {
 
 	const valueForQuestion = () => {
 		let result
-		var random_values = randomValues()
+		const random_values = randomValues()
 		if (random_values[2] === 0) {
 			result = `${random_values[0]} + ${random_values[1]}`
 		} else if (random_values[2] === 1) {

@@ -1,14 +1,14 @@
-import getRandomNumber from '../getRandom.js';
 import index from '../index.js';
 
 export default () => {
+  const randomInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
   const welcome = () => {
     console.log('Find the greatest common divisor of given numbers.');
   };
 
   const valueForQuestion = () => {
-    const firstNumber = getRandomNumber();
-    const secondNumber = getRandomNumber();
+    const firstNumber = randomInteger(1, 100);
+    const secondNumber = randomInteger(1, 100);
 
     return `${firstNumber} ${secondNumber}`;
   };

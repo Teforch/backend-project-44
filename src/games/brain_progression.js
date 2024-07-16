@@ -12,7 +12,7 @@ export default () => {
 
 	const valueForQuestion = () => {
 		const initialValue = getRandomNumber()
-		const amountOfNumbers = randomInteger(6, 10)
+		const amountOfNumbers = randomInteger(5, 10)
 		const valueOfProgression = randomInteger(1, 10)
 		const indexOfSecretValue = randomInteger(1, amountOfNumbers - 1)
 		let str = ``
@@ -25,7 +25,7 @@ export default () => {
 
 			str += ` ${initialValue + valueOfProgression * i}`
 		}
-		return str
+		return str.trim()
 	}
 
 	const getCorrectAnswer = (expression) => {

@@ -14,7 +14,7 @@ export default () => {
 		const initialValue = getRandomNumber()
 		const amountOfNumbers = randomInteger(5, 10)
 		const valueOfProgression = randomInteger(1, 10)
-		const indexOfSecretValue = randomInteger(1, amountOfNumbers - 1)
+		const indexOfSecretValue = randomInteger(1, amountOfNumbers - 2)
 		let str = ``
 
 		for (let i = 1; i <= amountOfNumbers; i += 1) {

@@ -25,5 +25,5 @@ export default (valueForQuestion, getCorrectAnswer, welcome) => {
 			return 0
 		}
 	}
-	console.log(`Congratulations, ${userName}`)
+	console.log(`Congratulations, ${userName}!`)
 }
